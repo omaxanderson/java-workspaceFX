@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MainScreenController">
+   <children>
+      <Button fx:id="button" layoutX="142.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="228.0" prefWidth="222.0" text="Click to go to the next scene" />
+      <Label layoutX="188.0" layoutY="27.0" prefHeight="72.0" prefWidth="173.0" text="SCENE 1">
+         <font>
+            <Font name="Malayalam MN" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

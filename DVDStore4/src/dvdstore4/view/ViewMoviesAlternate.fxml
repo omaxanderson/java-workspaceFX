@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dvdstore4.view.ViewMovieAlternateController">
+   <children>
+      <TableView fx:id="movieTable" layoutX="34.0" layoutY="29.0" prefHeight="346.0" prefWidth="289.0">
+        <columns>
+          <TableColumn fx:id="movieColumn" prefWidth="75.0" text="Movie Titles" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="filterField" layoutX="346.0" layoutY="29.0" promptText="Search" />
+      <GridPane layoutX="346.0" layoutY="65.0" prefHeight="288.0" prefWidth="228.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Director" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="directorLabel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Producer" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="producerLabel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Production Company" wrapText="true" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="productionCompanyLabel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Title">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="titleLabel" text="Label" wrapText="true" GridPane.columnIndex="1" />
+            <Label text="Stars" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="stars1Label" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Stock" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label fx:id="stockLabel" text="Label" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="stars2Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="stars3Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button fx:id="backButton" layoutX="436.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleBackClick" text="Back" />
+      <Button fx:id="editButton" layoutX="493.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleEditClicked" text="Edit Movie" />
+   </children>
+</AnchorPane>

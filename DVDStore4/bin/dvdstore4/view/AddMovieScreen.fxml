@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dvdstore4.view.AddMovieController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="145.0" layoutY="74.0" text="Title: " AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="74.0" />
+      <Label layoutX="125.0" layoutY="110.0" text="Director: " AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="110.0" />
+      <Label layoutX="117.0" layoutY="145.0" text="Producer: " AnchorPane.leftAnchor="117.0" AnchorPane.topAnchor="145.0" />
+      <Label layoutX="45.0" layoutY="180.0" text="Production Company: " AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="141.0" layoutY="220.0" text="Stars: " AnchorPane.leftAnchor="141.0" AnchorPane.topAnchor="220.0" />
+      <Label fx:id="stockLabel" layoutX="139.0" layoutY="332.0" text="Stock:" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="332.0" />
+      <TextField fx:id="title" layoutX="193.0" layoutY="69.0" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="69.0" />
+      <TextField fx:id="director" layoutX="193.0" layoutY="105.0" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="105.0" />
+      <TextField fx:id="producer" layoutX="193.0" layoutY="140.0" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="140.0" />
+      <TextField fx:id="productionCompany" layoutX="193.0" layoutY="175.0" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="175.0" />
+      <TextField fx:id="stars1" layoutX="193.0" layoutY="215.0" />
+      <TextField fx:id="stars2" layoutX="193.0" layoutY="252.0" />
+      <TextField fx:id="stars3" layoutX="193.0" layoutY="288.0" />
+      <TextField fx:id="stock" layoutX="193.0" layoutY="327.0" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="327.0" />
+      <Button fx:id="add" layoutX="469.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleAddClicked" prefHeight="78.0" prefWidth="85.0" text="Add Movie">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="391.0" layoutY="327.0" mnemonicParsing="false" onAction="#handleBackClicked" text="Back" />
+      <Label layoutX="380.0" layoutY="64.0" lineSpacing="6.0" prefHeight="106.0" prefWidth="198.0" text="Please enter the information for the new movie. If you do not know a certain piece of information, simply leave the space blank." wrapText="true" />
+      <Label layoutX="195.0" layoutY="20.0" text="Add New Movie">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

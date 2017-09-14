@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dvdstore4.view.AddCustomerController">
+   <children>
+      <TextField fx:id="first" layoutX="219.0" layoutY="147.0" />
+      <TextField fx:id="last" layoutX="219.0" layoutY="179.0" />
+      <Label layoutX="145.0" layoutY="152.0" text="First Name:" />
+      <Label layoutX="145.0" layoutY="184.0" text="Last Name:" />
+      <Button fx:id="add" layoutX="268.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleAddClicked" prefHeight="26.0" prefWidth="114.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="cancel" layoutX="190.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleCancelClicked" text="Cancel" />
+   </children>
+</AnchorPane>

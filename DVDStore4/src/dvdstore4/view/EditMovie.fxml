@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dvdstore4.view.EditMovieController">
+   <children>
+      <Label layoutX="188.0" layoutY="75.0" text="Title" />
+      <Label layoutX="167.0" layoutY="111.0" text="Director" />
+      <Label layoutX="159.0" layoutY="147.0" text="Producer" />
+      <Label layoutX="148.0" layoutY="174.0" prefHeight="38.0" prefWidth="65.0" text="Production Company" wrapText="true" />
+      <Label layoutX="185.0" layoutY="221.0" text="Stars" />
+      <Label layoutX="173.0" layoutY="326.0" text="Stock" />
+      <TextField fx:id="title" layoutX="219.0" layoutY="70.0" />
+      <TextField fx:id="director" layoutX="219.0" layoutY="106.0" />
+      <TextField fx:id="producer" layoutX="219.0" layoutY="142.0" />
+      <TextField fx:id="productionCompany" layoutX="219.0" layoutY="180.0" />
+      <TextField fx:id="stars1" layoutX="219.0" layoutY="216.0" />
+      <TextField fx:id="stars2" layoutX="219.0" layoutY="250.0" />
+      <TextField fx:id="stars3" layoutX="219.0" layoutY="284.0" />
+      <TextField fx:id="stock" layoutX="219.0" layoutY="321.0" />
+      <Label layoutX="213.0" layoutY="31.0" text="Edit Movie Information">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="421.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleBackClicked" text="Back" />
+      <Button fx:id="save" layoutX="491.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleSaveClicked" text="Save">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
